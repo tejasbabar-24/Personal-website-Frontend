@@ -1,0 +1,336 @@
+body{
+    font-family: 'Poppins','sans-serif';
+    color: black;
+    background-color: whitesmoke;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+
+}
+h1,h2{
+    font-weight: 700;
+}
+p{
+    font-weight: 700;
+}
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover{
+    color: #0056b3;
+
+    text-decoration: underline;
+}
+header{
+    background:linear-gradient(to right,#831bcd,#F9620b);
+    color: #ffff;
+    padding: 40px 0;
+    text-align: center;
+
+}
+section{
+    padding: 20px;
+    text-align: 'center';
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+form
+{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width: calc(100%-90px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+    display: block; /* Block level so it doesn't inline */
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 10px; /* Space above the button */
+    background-image: linear-gradient(to right, #831bcd, #f9620b);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-image: linear-gradient(to right, #f9620b, #831bcd);
+}
+hr{
+    width: 50%;
+    margin: 25px auto;
+    border-top: 1px solid #ccc;
+
+}
+footer {
+    background: linear-gradient(to right, #831bcd, #f9620b);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.icon-link {
+    display: inline-block; /* Display icon links inline with block formatting */
+    margin: 0 10px; /* Adds space on the left and right of each icon */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 60px; /* Vertically centers the icons */
+    text-align: center; /* Centers the icon within the link */
+}
+
+.email-icon {
+    background-color: #dd4b39;
+}
+
+.linkdin-icon {
+    background-color: #0e76a8;
+}
+
+.icon-link:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skills-list li {
+    list-style-type: none;
+    background: #f0f2f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: bounce 1s infinite alternate; /* Apply bounce animation */
+}
+@media only screen and (max-width: 768px) {
+    .skills-list {
+        flex-direction: column; /* Stacks skills vertically on smaller screens */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    header, footer {
+        padding: 15px; /* Adjusts padding for smaller screens */
+    }
+
+    section, form {
+        width: calc(100% - 20px); /* Adjusts width to ensure spacing on very small screens */
+        margin: 10px auto;
+    }
+
+    .icon-link {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px; /* Adjusts icon size and spacing for smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 16px; /* Adjusts heading sizes for better readability on small devices */
+    }
+}
+
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+.horizontal-scroll {
+    overflow-x: hidden; /* Hide any overflowing content */
+    width: 100%; /* Occupy full width of the screen */
+}
+.icon-container {
+    display: flex; /* Display icons in a row */
+    animation: scrollAnimation 10s linear infinite; /* Adjust animation duration as needed */
+    width: max-content; /* Make the container width fit its content */
+}
+
+.icon-container img {
+    width: 60px; /* Adjust the width of icons as needed */
+    height: 60px; /* Adjust the height of icons as needed */
+    margin-right: 20px; /* Adjust margin between icons as needed */
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(100vw); /* Start from the right edge of the viewport */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left edge */
+    }
+}
+
+/*CSS for dark Mode*/
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode p{
+    color: #fff;
+}
+
+/*----------------Programmin Skills section----------------*/
+
+#programming-languages {
+    margin-top: 50px; /* Adjust spacing as needed */
+}
+
+#programming-languages .skill {
+    margin-bottom: 20px;
+}
+
+#programming-languages .progress-bar {
+    width: 0;
+    height: 20px;
+    background: linear-gradient(to right, #831bcd, #f9620b);
+    border-radius: 10px;
+}
+
+#programming-languages .progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#programming-languages .progress-bar.animated {
+    animation: animateProgress 1s ease forwards;
+}
+
+@keyframes animateProgress {
+    to {
+        width: var(--progress); /* Animate to the specified progress */
+    }
+}
+
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if needed, but we'll manage this with media queries */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 20px;
+}
+
+/* Ensuring the nav logo and toggle are always aligned left */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows the navbar-container to grow and use available space */
+}
+
+.nav-logo img {
+    height: 50px; /* Adjust the height as necessary */
+    width: auto; /* This will maintain the aspect ratio of your logo */
+    border: none; /* Removes any borders */
+    border-radius: 0; /* Removes any round corners */
+    box-shadow: none; /* Removes any shadow effects */
+}
+
+/* Adjustments to the nav-menu to display inline on desktop */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1; /* Allows the nav-menu to grow and use available space */
+    justify-content: flex-end; /* Aligns menu items to the right */
+}
+
+/* Styling for nav items and resume button */
+.nav-menu a, .nav-menu .resume-button {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.resume-button {
+    background-color: #831bcd;
+    color: #fff;
+}
+
+/* Hide the toggle button on wider screens */
+.nav-toggle {
+    display: none;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide by default on mobile */
+        /* Additional mobile-specific styles here */
+    }
+
+    /* Styling adjustments for when the nav-menu is active */
+    .nav-menu.active {
+        display: flex; /* Display the menu in a column when active */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle button on mobile */
+        margin-left: auto; /* Ensures the toggle button is aligned to the right */
+    }
+    .nav-toggle i {
+        font-size: 24px; /* Increase to desired size */
+        cursor: pointer;
+    }
+}
+
+
+/* Dark Mode Adjustments */
+.dark-mode .navbar {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .nav-menu a, .dark-mode .nav-menu .resume-button {
+    color: #fff;
+}
+
+.dark-mode .nav-menu a:hover, .dark-mode .nav-menu .resume-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

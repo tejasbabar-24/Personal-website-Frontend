@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale-1.0" />
+    <meta name="description" content="Personal Portfolio Page of Tejas" />
+    <title>Tejas Profile</title>
+    <link rel="icon" href="./assets/image/icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <center>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <!-- <a href=""><img src=""" alt="tejas log" />Tejas Babar</a> -->
+           <h2>Tejas Babar</h2>
+          <div class="nav-toggle"><i class="fas fa-bar"></i></div>
+        </div>
+        <div class="nav-menu">
+          <!-- <a href="Home.html">Home</a>
+        <a href="contact.html">Contact</a> -->
+          <a href="./CV/TejasBabarCV.pdf" target="_blank" class="resume-button">Download Resume</a>
+        </div>
+        <div id="dark-mode-toggle" class="dark-mode-toggle">
+          <i class="fas fa-moon"></i>
+        </div>
+      </nav>
+      <header>
+        <h1>
+          This is Tejas, a Tech Enthusiastic.<span class="about-me"></span>
+        </h1>
+        <p>Welcome to My World !</p>
+      </header>
+      <hr />
+      <section>
+        <h2>About Me</h2>
+        <p>Hello I'm Tejas, and here a litile info about me</p>
+        <img src="./assets/image/tejaspic.webp" alt="tejas pic" width="300" />
+      </section>
+      <hr />
+      <section>
+        <h2>Contact Information</h2>
+        <p>Let's Connect</p>
+        <p>
+          <a href="mailto:babartejas21@gmail.com" class="icon-link email-icon"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          |
+          <a
+            href="www.linkedin.com/in/tejas-babar-751290204"
+            class="icon-link linkdin-icon"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2>My Skills</h2>
+        <div class="skills-list">
+          <ul class="skills-list">
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Photography</li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section class="horizontal-scroll">
+        <div class="icon-container">
+          <img src="icons/1.png" alt="Icon 1" />
+          <img src="icons/2.png" alt="Icon 2" />
+          <img src="icons/3.png" alt="Icon 3" />
+          <img src="icons/4.png" alt="Icon 4" />
+          <img src="icons/5.png" alt="Icon 5" />
+          <img src="icons/6.webp" alt="Icon 6" />
+          <img src="icons/7.svg" alt="Icon 7" />
+          <img src="icons/8.png" alt="Icon 8" />
+          <img src="icons/9.png" alt="Icon 9" />
+          <img src="icons/10.png" alt="Icon 10" />
+        </div>
+      </section>
+      <hr />
+      <section id="programming-languages">
+        <h2>Programming Languages</h2>
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="progress-bar" data-progress="60"></div>
+        </div>
+        <div class="skill">
+          <p>HTML</p>
+          <div class="progress-bar" data-progress="60"></div>
+        </div>
+        <div class="skill">
+          <p>CSS</p>
+          <div class="progress-bar" data-progress="60"></div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2>Portfolio</h2>
+        <p>Take a Look At my Works</p>
+        <p><a href="project.html">Project 1</a></p>
+      </section>
+      <hr />
+      <section>
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+
+          <label for="name">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="name">Message:</label>
+          <textarea id="Message" name="Message"></textarea><br /><br />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </center>
+    <hr />
+    <footer>
+      <p>&copy; 2024 Tejas Built By Myself</p>
+    </footer>
+  </body>
+</html>
